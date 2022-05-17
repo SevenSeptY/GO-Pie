@@ -10,12 +10,15 @@ go get: Downloads the raw source code of someone else's package
 go test: Runs any tests associated with the current project
 */
 package main //Package = Project = Workspace  - every file belongs to this package need this 
-//Type of package:1. Excuteable: Generates a file that we can run; 
-//                2. Reusable: Code used as "help[ers. good place to put resuable logic
-//
+             //Type of package:1. Excuteable: Generates a file that we can run; 
+	     //                2. Reusable: Code used as "help[ers. good place to put resuable logic
+	   
 import "fmt" //Give our package access to some code insode other 
-//Standard library: main  -> fmt/math/encoding/crypto/io/debug
+             //Standard library: main -> fmt/math/encoding/crypto/io/debug
 
-func main() { //function main 
-	fmt.Println("Hi There!")
+func main() {                     
+	fmt.Println("Hi There!")  //function body. caling the 
 }
+//func:  Tells go we are about to declare a function 
+//main sets the name of the function 
+//(): List of arguments to pass the function 
