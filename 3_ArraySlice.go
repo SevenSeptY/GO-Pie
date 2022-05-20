@@ -1,7 +1,15 @@
 /*
 Array has fixed 
 Slice can be expanded or shirnk 
+1. With the var keyword:
+var array_name = [length]datatype{values} // here length is defined
+or
+var array_name = [...]datatype{values} // here length is inferred
 
+2. With the := sign:
+array_name := [length]datatype{values} // here length is defined
+or
+array_name := [...]datatype{values} // here length is inferred
 */
 package main
 import "fmt"
