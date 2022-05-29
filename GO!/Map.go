@@ -2,9 +2,37 @@ package main
 
 import "fmt"
 
+func test4() {
+	var m1 = map[string]string{"name": "tom", "age": "20", "email": "tom@gmail.com"}
+	var k1 = "name"
+	var k2 = "age 1"
+	v, ok := m1[k1]
+	fmt.Printf("v:%v\n", v)
+	fmt.Printf("ok:%v\n", ok)
+	fmt.Println("--------------------------")
+	v, ok = m1[k2]
+	fmt.Printf("v:%v\n", v)
+	fmt.Printf("ok:%v\n", ok)
+
+}
+
+func test3() {
+	var m1 = map[string]string{"name": "tom", "age": "20", "email": "tom@gmail.com"}
+	var key = "name"
+
+	var value = m1[key]
+	fmt.Printf("Value: %v\n", value)
+}
+
 func test2() {
 	var m2 = map[string]string{"name": "tom", "age": "20", "email": "tom@gmail.com"}
 	fmt.Printf("m2: %v\n", m2)
+
+	m3 := make(map[string]string)
+	m3["name"] = "tom"
+	m3["age"] = "20"
+	m3["email"] = "tom@hotmail.com"
+	fmt.Printf("m3: %v\n", m3)
 }
 
 func test1() {
@@ -19,6 +47,8 @@ func test1() {
 }
 
 func main() {
-	test1()
-	test2()
+	//test1()
+	//test2()
+	//test3()
+	test4()
 }
