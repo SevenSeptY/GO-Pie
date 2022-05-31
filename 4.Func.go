@@ -13,7 +13,19 @@ func sum(a int, b int) (ret int) {
 	return ret
 }
 
+func comp(a int, b int) (max int) {
+	if a > b {
+		max = a
+	} else {
+		max = b
+	}
+	return max
+}
+
 func main() {
 	r := sum(3, 5)
+	fmt.Printf("r: %v\n", r)
+
+	r = comp(1, 2)
 	fmt.Printf("r: %v\n", r)
 }
