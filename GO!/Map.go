@@ -52,3 +52,34 @@ func main() {
 	//test3()
 	test4()
 }
+
+
+//----------------------------------------------
+package main
+
+import "fmt"
+
+func main() {
+	var m map[string]int
+	fmt.Println(len(m))
+	m = make(map[string]int) // ==m = make(map[string]int, 0)
+	fmt.Println(len(m))
+	m = make(map[string]int, 10) //cap = 10 , not length
+	fmt.Println(len(m))
+	m = map[string]int{"A": 3, "B": 2}
+	fmt.Println(len(m))
+	m["D"] = 18
+	fmt.Println(len(m))
+
+	delete(m, "B")
+	fmt.Println(len(m))
+
+	for key, value := range m {
+		fmt.Printf("key %s, value %d\n", key, value)
+	}
+}
+
+/*
+
+
+ */
